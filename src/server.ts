@@ -5,7 +5,6 @@ import { ForecastController } from './controllers/forecast';
 import './util/module-alias';
 
 export class SetupServer extends Server {
-
   constructor(private port = 3000) {
     super();
   }
@@ -21,7 +20,7 @@ export class SetupServer extends Server {
 
   private setupControllers(): void {
     const forecastController = new ForecastController();
-    this.addControllers([forecastController])
+    this.addControllers([forecastController]);
   }
 
   public getApp(): Application {
