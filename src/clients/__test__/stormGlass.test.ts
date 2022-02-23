@@ -76,5 +76,4 @@ describe('StormGlass client', () => {
       'Unexpected error returned by the StormGlass service: Error: {"errors":["Rate Limit reached"]} Code: 429'
     );
   });
-
 });
